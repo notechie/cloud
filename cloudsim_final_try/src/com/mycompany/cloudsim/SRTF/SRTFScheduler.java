@@ -28,8 +28,8 @@ public class SRTFScheduler {
             // Create VMs
             List<Vm> vmlist = new ArrayList<>();
             int mips = 1000;
-            int ram = 512; // VM memory (RAM)
-            long bw = 10000; // VM bandwidth
+            int ram = 1024; // VM memory (RAM)
+            long bw = 512; // VM bandwidth
             long size = 10000; // Image size (required storage)
             String vmm = "Xen"; // VMM name
 
@@ -80,7 +80,7 @@ public class SRTFScheduler {
 
     private static Datacenter createDatacenter(String name) {
         List<Host> hostList = new ArrayList<>();
-        int mips = 1000;
+        int mips = 10000;
         int ram = 8192; // Host RAM (8 GB)
         long storage = 100000;
         int bw = 10000;

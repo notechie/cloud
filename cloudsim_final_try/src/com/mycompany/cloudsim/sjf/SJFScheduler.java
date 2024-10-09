@@ -25,8 +25,8 @@ public class SJFScheduler {
 
             List<Vm> vmlist = new ArrayList<>();
             int mips = 1000;
-            int ram = 2048;
-            long bw = 10000;
+            int ram = 1024;
+            long bw = 512;
             long size = 10000;
             String vmm = "Xen";
 
@@ -66,8 +66,8 @@ public class SJFScheduler {
 
     private static Datacenter createDatacenter(String name) {
         List<Host> hostList = new ArrayList<>();
-        int mips = 1000;
-        int ram = 2048;
+        int mips = 10000;
+        int ram = 8192;
         long storage = 100000;
         int bw = 10000;
         List<Pe> peList = new ArrayList<>();

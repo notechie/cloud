@@ -39,8 +39,8 @@ public class PriorityScheduler {
             // Create VMs
             List<Vm> vmlist = new ArrayList<>();
             int mips = 1000;
-            int ram = 4096; // VM memory (RAM)
-            long bw = 10000; // VM bandwidth
+            int ram = 1024; // VM memory (RAM)
+            long bw = 512; // VM bandwidth
             long size = 10000; // Image size (required storage)
             String vmm = "Xen"; // VMM name
 
@@ -85,7 +85,7 @@ public class PriorityScheduler {
 
     private static Datacenter createDatacenter(String name) {
         List<Host> hostList = new ArrayList<>();
-        int mips = 1000;
+        int mips = 10000;
         int ram = 8192; // Host memory (RAM)
         long storage = 100000;
         int bw = 10000;

@@ -28,8 +28,8 @@ public class FCFSScheduler {
             // Create VMs
             List<Vm> vmlist = new ArrayList<>();
             int mips = 1000;
-            int ram = 2048; // VM memory (RAM)
-            long bw = 10000; // VM bandwidth
+            int ram = 1024; // VM memory (RAM)
+            long bw = 512; // VM bandwidth
             long size = 10000; // Image size (required storage)
             String vmm = "Xen"; // VMM name
 
@@ -70,8 +70,8 @@ public class FCFSScheduler {
 
     private static Datacenter createDatacenter(String name) {
         List<Host> hostList = new ArrayList<>();
-        int mips = 1000;
-        int ram = 2048;
+        int mips = 10000;
+        int ram = 8192;
         long storage = 100000;
         int bw = 10000;
         List<Pe> peList = new ArrayList<>();
